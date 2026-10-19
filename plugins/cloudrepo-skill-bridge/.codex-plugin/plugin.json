@@ -1,0 +1,28 @@
+{
+  "interface": {
+    "displayName": "CloudRepo Skill Bridge",
+    "shortDescription": "Resolve multi-repo skills",
+    "longDescription": "CloudRepo Skill Bridge discovers and resolves verified skill manifests across explicitly selected, immutable Git repository revisions. It prefers authoritative native repository discovery when available and otherwise performs bounded read-only resolution through existing local Git, public GitHub or authorized connector mechanisms. The bridge never installs, activates or executes untrusted skill code, publishes resources or broadens user permissions. Current Cloud runtime availability remains a separately tracked host integration limitation.",
+    "developerName": "Tungsteno74",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read-only Git skill discovery",
+      "Provenance-aware native preference",
+      "Controlled repository instruction fallback",
+      "Root and Child context handoff",
+      "Pinned multi-repository skill resolution"
+    ],
+    "defaultPrompt": "Use $cloudrepo-skill-discovery to identify valid skill manifests at the associated repository revision. Use $cloudrepo-skill-invoke only for explicitly requested instructions; prefer verified native repo provenance, and clearly label read-only manual fallback. Never infer that reading a skill file registers or executes it.",
+    "logo": "./assets/icon.png",
+    "composerIcon": "./assets/icon.png"
+  },
+  "apps": "./.app.json",
+  "name": "cloudrepo-skill-bridge",
+  "version": "0.2.0",
+  "description": "Provider-neutral CloudRepo skill discovery and read-only resolution across explicitly pinned Git repositories; no implicit writes.",
+  "author": {
+    "name": "Tungsteno74"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

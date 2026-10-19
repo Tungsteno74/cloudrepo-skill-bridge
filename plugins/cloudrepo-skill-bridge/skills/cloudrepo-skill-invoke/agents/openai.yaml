@@ -1,0 +1,8 @@
+interface:
+  display_name: CloudRepo Skill Invoke
+  short_description: Resolve task-relevant repository skills safely
+  default_prompt: Use $cloudrepo-skill-invoke when the current task needs a repository skill, even if Root or Child selected it autonomously. Verify repository revision and provenance; resolve read-only, disclose fallback, and require existing authorization for operational steps.
+policy:
+  allow_implicit_invocation: true
+  products:
+    - CODEX

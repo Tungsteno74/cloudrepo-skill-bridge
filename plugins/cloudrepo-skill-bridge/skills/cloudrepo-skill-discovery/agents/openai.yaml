@@ -1,0 +1,8 @@
+interface:
+  display_name: CloudRepo Skill Discovery
+  short_description: Find verified skills in an associated Git checkout
+  default_prompt: Discover the skills in the repository associated with this task, verify the exact commit and source, and distinguish repository-local from plugin-native discovery.
+policy:
+  allow_implicit_invocation: true
+  products:
+    - CODEX
