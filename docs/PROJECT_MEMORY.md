@@ -11,9 +11,10 @@
   plugins/cloudrepo-skill-bridge/ is the complete release package.
 - The plugin remains provider-neutral, read-only, and has no native
   registration API or automatic CI publishing authority.
-- This is a separate plugin from the historical
-  cloudcodex-repository-skill-bridge; do not delete or silently redirect it.
-- Repository hosting starts private pending an explicit visibility decision.
+- CloudRepo Skill Bridge 0.2.0 is the sole maintained canonical identity;
+  the migration is complete. Historical artifacts remain in Git history.
+- Its GitHub source repository is intentionally public; the ChatGPT plugin
+  distribution remains private to the user.
 
 ## Observed / verified
 
@@ -29,16 +30,28 @@
 - The initial Current Cloud read-only A/B experiment demonstrated
   connector-backed document resolution, not packaged CLI execution.
 
-## Unresolved / future verification
+## E2E closure (2026-10-19)
 
-- Native Current Cloud loader exposure of these plugin skills and the
-  packaged Python runtime is not proven by a source ZIP or CI result.
-- Windows Bootstrap managed-run E2E is a separately authorized subsequent
-  workflow; do not trigger it from this repository setup.
-- An initial GitHub CI result must be observed rather than inferred from
-  workflow configuration alone.
+- ChatGPT plugin-owned skills were listed and read natively in Current Cloud.
+  Version 0.2.0 is confirmed by Plugin Creator, but the Cloud task's loader
+  did not independently expose a version identifier.
+- The independent private fixture at commit
+  2b76c20a1104df182a79845a415b31a9778bfd49 proved read-only document
+  resolution and retained a clean checkout. Its repository-local skill was
+  NOT exposed with an authoritative native scope=repo locator.
+- The packaged Python CLI was unavailable in the Current Cloud runtime;
+  its separate local single-source and multi-source tests passed.
+- Windows Bootstrap 0.6.8 managed E2E passed in run 39271694821, with
+  WINDOWS_CLOUD_E2E_OK and verified baseline restoration; no default branch
+  change, PR or merge occurred. This verifies Bootstrap operational CI,
+  not native Bridge repository registration.
+- E2E acceptance is complete for release 0.2.0 with provider-native repo
+  discovery and Cloud CLI mounting recorded as external limitations, not
+  passed gates. Do not broaden these observations into guaranteed provider
+  features or claim the whole sequence runs automatically.
 
-## Retired / historical
+## Retention
 
-- The CloudCodeX-branded alpha plugin used another canonical name, skill
-  identifiers and Python namespace. Its release is retained for migration.
+- Historical releases and changelog entries remain preserved for audit.
+- The retired independent E2E fixture may remain archived as a benchmark;
+  no legacy plugin is part of the active distribution path.

@@ -17,7 +17,8 @@ significant changes and follow the applicable AGENTS_POLICY guidance.
 - Use Python 3.9+, type hints, PEP 8, straightforward interfaces and the
   declared PyYAML dependency. Do not add unrelated dependencies.
 - Run python -X utf8 tools/validate.py before commits; report any skipped
-  tests and keep Current Cloud native-loader work as an unverified TODO.
+  tests. The plugin-owned Cloud loader is verified; repo-native discovery
+  and packaged CLI mounting remain observed provider limitations.
 - Generated ZIPs belong under dist/, not in plugin source. No marketplace
   manifest, account-specific plugin ID, secrets or automatic plugin publisher
   belongs in this repository.
