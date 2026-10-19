@@ -53,5 +53,7 @@
 ## Retention
 
 - Historical releases and changelog entries remain preserved for audit.
-- The retired independent E2E fixture may remain archived as a benchmark;
-  no legacy plugin is part of the active distribution path.
+- The retired Bridge fixture and disposable Windows E2E repositories were
+  deleted from GitHub on 2026-10-19. Their commit/run IDs above are
+  historical evidence, not active repository or Actions links.
+- No legacy plugin is part of the active distribution path.
