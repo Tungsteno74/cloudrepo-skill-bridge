@@ -48,3 +48,5 @@ above. Do not count document fallback as native repository activation.
 
 See the package README in plugins/cloudrepo-skill-bridge/ and project memory in
 docs/PROJECT_MEMORY.md. This repository does not contain marketplace metadata.
+
+Licensed under [MIT](LICENSE).
